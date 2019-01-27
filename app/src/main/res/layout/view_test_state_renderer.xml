@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myprojects.eduardoexposito.sphinx.ui.views.PlaygroundSideEffectsRenderView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/viewPlaygroundGameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+    <TextView
+            android:id="@+id/viewGameCurrentState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Current state"
+            android:layout_marginTop="@dimen/margin_big"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+            android:id="@+id/buttonGameCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/viewGameMiddleGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/viewGameCurrentState"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginEnd="@dimen/margin_tiny"
+            android:layout_marginStart="@dimen/margin_small"
+            android:text="@string/cancel"/>
+
+    <Button
+            android:id="@+id/buttonGameContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="@+id/viewGameMiddleGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewGameCurrentState"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_marginStart="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:text="@string/ok"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/viewGameMiddleGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+</com.myprojects.eduardoexposito.sphinx.ui.views.PlaygroundSideEffectsRenderView>

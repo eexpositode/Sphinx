@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myprojects.eduardoexposito.sphinx.ui.views.DialogContainerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:visibility="visible"
+            tools:text="@string/test_text"
+            android:id="@+id/currentDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_to_avatar_small"
+            android:layout_marginTop="@dimen/margin_top_to_avatar_small"
+            android:layout_marginBottom="@dimen/margin_bottom_to_action_buttons"
+            android:paddingTop="@dimen/padding_enormous"
+            android:paddingStart="@dimen/padding_large"
+            android:paddingEnd="@dimen/padding_large"
+            android:paddingBottom="@dimen/padding_from_dialog_text_bottom_to_button_top"
+            style="@style/Text.Dialog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_min="@dimen/dialog_min_height"
+            app:layout_constrainedHeight="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+            tools:visibility="visible"
+            tools:text="Cancel"
+            android:id="@+id/negativeButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            style="@style/Button.Dialog.Cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/positiveButton"
+            app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"/>
+
+    <android.support.v7.widget.AppCompatButton
+            tools:visibility="visible"
+            tools:text="Continue"
+            android:id="@+id/positiveButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            style="@style/Button.Dialog.Continue"
+            app:layout_constraintStart_toEndOf="@+id/negativeButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomGuideline"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/bottomGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="1"/>
+</com.myprojects.eduardoexposito.sphinx.ui.views.DialogContainerView>

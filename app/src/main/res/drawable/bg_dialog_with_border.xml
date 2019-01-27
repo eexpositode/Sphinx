@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+        <shape
+                android:shape="rectangle">
+            <corners
+                    android:radius="@dimen/bg_border_radius_50dp"
+                    android:topRightRadius="@dimen/bg_border_radius_10dp"
+                    android:bottomRightRadius="@dimen/bg_border_radius_10dp"
+                    android:bottomLeftRadius="@dimen/bg_border_radius_10dp"/>
+            <stroke
+                    android:width="@dimen/dialog_border_dimen"
+                    android:color="@color/brown_deep"/>
+        </shape>
+    </item>
+    <item
+            android:start="@dimen/margin_tiny"
+            android:top="@dimen/margin_tiny"
+            android:end="@dimen/margin_tiny"
+            android:bottom="@dimen/margin_tiny">
+    <shape
+            android:shape="rectangle">
+        <corners
+                android:radius="45dp"
+                android:topRightRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:bottomLeftRadius="6dp"/>
+        <stroke
+                android:width="@dimen/dialog_border_dimen"
+                android:color="@color/brown_light"/>
+    </shape>
+</item>
+    <item
+            android:start="@dimen/margin_medium"
+            android:top="@dimen/margin_medium"
+            android:end="@dimen/margin_medium"
+            android:bottom="@dimen/margin_medium">
+
+        <shape
+                android:shape="rectangle">
+            <corners
+                    android:radius="40dp"
+                    android:topRightRadius="1dp"
+                    android:bottomRightRadius="1dp"
+                    android:bottomLeftRadius="1dp"/>
+            <stroke
+                    android:width="@dimen/dialog_border_dimen"
+                    android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+</layer-list>

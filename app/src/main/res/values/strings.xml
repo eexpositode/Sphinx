@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Sphinx</string>
+    <string name="location_label">Location</string>
+    <string name="location_latitude_label">Latitude:</string>
+    <string name="location_longitude_label">Longitude:</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Continue</string>
+    <string name="test_text">Dignissim luctus mauris sem leo risus
+        tincidunt aliquam quisque ut nec enim ut condimentum eros.
+        Accumsan eleifend rerum accumsan ipsum lorem tellus eu elit.
+        tincidunt aliquam quisque ut nec enim ut condimentum eros.
+    </string>
+
+    <!-- Alert Dialog -->
+    <string name="dialog_positive_button">OK</string>
+    <string name="dialog_negative_button">Cancel</string>
+    <string name="dialog_install_google_play_services_title">Google Play Services</string>
+    <string name="dialog_install_google_play_services_message">You need to install Google Play Services to use the App properly</string>
+    <string name="dialog_enable_location_permissions_title">Location permissions</string>
+    <string name="dialog_enable_location_permissions_message">You need to enable permissions to display location</string>
+    <string name="dialog_permissions_request_allowance_title">Location permissions request</string>
+    <string name="dialog_location_permissions_request_allowance_message">These permissions are mandatory to get your location. You need to allow them.</string>
+    <string name="dialog_unexpected_error_title">Unexpected error</string>
+    <string name="dialog_unexpected_error_message">Something weird just happened… Hmmm</string>
+    <string name="dialog_no_connectivity_title">Connectivity issue</string>
+    <string name="dialog_no_connectivity_message">No connection to the internet was found.</string>
+
+    <!-- Locations -->
+    <string name="location_tenerife_title">Tenerife</string>
+    <string name="location_tenerife_description">Very beautiful place</string>
+    <string name="location_berlin_title">Berlin</string>
+    <string name="location_berlin_description">Very beautiful place</string>
+    <string name="location_berlin_gendarmenmarkt_title">Gendarmenmarkt</string>
+    <string name="location_berlin_gendarmenmarkt_description">Very beautiful place</string>
+    <string name="location_berlin_charlottenburg_title">Charlottenburg</string>
+    <string name="location_berlin_charlottenburg_description">Very beautiful place</string>
+    <string name="location_berlin_alexanderplatz_title">Alexanderplatz</string>
+    <string name="location_berlin_alexanderplatz_description">Very beautiful place</string>
+    <string name="location_distance_to_template">Distance to: %1$s</string>
+    <string name="location_distance_by_null_location">NaN</string>
+    <string name="location_distance_km_unit">%1$s Km</string>
+    <string name="transition_error_title">Transition error</string>
+    <string name="transition_error_message">Error when trying to transit from state %1$s with event %2$s</string>
+    <string name="lock_code_continue_text">Continue</string>
+
+</resources>

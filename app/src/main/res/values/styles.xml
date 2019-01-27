@@ -1,0 +1,112 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="editTextStyle">@style/AppTheme.EditTextStyle</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <!-- hint color in the search view -->
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:windowBackground">@drawable/bg_main_container_gradient</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/positiveButtonColor</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/negativeButtonColor</item>
+    </style>
+
+    <style name="AppTheme.EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textColorHint">@color/hintTextColor</item>
+    </style>
+
+    <!-- Text style -->
+    <style name="Text"/>
+
+    <style name="Text.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:background">@drawable/bg_dialog_with_border</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <style name="Text.Display">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text.Command">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_big</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <style name="Text.Box">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:background">@drawable/bg_code_box_with_shade</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- Image style -->
+    <style name="Image"/>
+
+    <style name="Image.Avatar">
+        <item name="android:src">@mipmap/img_sphinx_avatar</item>
+    </style>
+
+    <style name="Image.Avatar.Icon"/>
+
+    <style name="Image.Avatar.Pic"/>
+
+    <!-- Button style -->
+    <style name="Button"/>
+    <style name="Button.Dialog">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_margin">@dimen/margin_medium</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+    <style name="Button.Dialog.Cancel">
+        <item name="android:background">@drawable/bg_negative_button</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+    <style name="Button.Dialog.Continue">
+        <item name="android:background">@drawable/bg_positive_button</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="Button.Pin">
+        <item name="android:background">@drawable/bg_pin_code_with_shade</item>
+        <item name="android:tint">@color/gray_very_light</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+        <item name="android:layout_margin">@dimen/margin_tiny</item>
+    </style>
+
+    <style name="Button.Pin.Code">
+        <item name="android:background">@drawable/bg_code_box_with_shade</item>
+        <item name="android:tint">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a148c</color>
+    <color name="colorPrimaryLight">#7c43bd</color>
+    <color name="colorPrimaryDark">#12005e</color>
+    <color name="colorAccent">@color/yellow_deep</color>
+    <color name="primaryTextColor">@color/colorPrimaryDark</color>
+    <color name="hintTextColor">@color/gray_light</color>
+    <color name="positiveButtonColor">@color/colorAccent</color>
+    <color name="negativeButtonColor">@color/gray_medium</color>
+
+    <!-- Locations colors-->
+    <color name="location_tenerife">@color/colorPrimary</color>
+    <color name="location_berlin">@color/colorPrimary</color>
+    <color name="location_berlin_gendarmenmarkt">@color/colorPrimary</color>
+    <color name="location_berlin_charlottenburg">@color/colorPrimary</color>
+    <color name="location_alexanderplatz">@color/colorPrimary</color>
+
+
+    <color name="pin_code_entered_image_color">@color/colorPrimary</color>
+    <color name="guidelines_color">@color/gray_very_light</color>
+
+    <color name="gray_medium">#7B7F7F</color>
+    <color name="brown_deep">#c25e00</color>
+    <color name="brown_light">#ffbd45</color>
+    <color name="orange_deep">#bf360c</color>
+    <color name="orange_light">#f9683a</color>
+    <color name="orange_dark">#870000</color>
+    <color name="yellow_deep">#fdd835</color>
+    <color name="green_dark">#33691e</color>
+    <color name="green_deep">#43a047</color>
+    <color name="green_light">#7cb342</color>
+    <color name="gray_light">#C8CBCB</color>
+    <color name="gray_very_light">#fafafa</color>
+    <color name="white">#ffffff</color>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myprojects.eduardoexposito.sphinx.ui.views.PinContainerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+            tools:visibility="visible"
+            tools:text="Enter the code:"
+            android:id="@+id/actionCommandDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/Text.Command"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/pinCodesTopGuideline"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinCode1"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            style="@style/Button.Pin.Code"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actionCommandDisplay"
+            app:layout_constraintEnd_toStartOf="@+id/pinCode2"
+            app:layout_constraintBottom_toTopOf="@+id/pinCodesBottomBarrier"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinCode2"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            style="@style/Button.Pin.Code"
+            app:layout_constraintStart_toEndOf="@+id/pinCode1"
+            app:layout_constraintTop_toBottomOf="@+id/actionCommandDisplay"
+            app:layout_constraintEnd_toStartOf="@+id/pinCode3"
+            app:layout_constraintBottom_toTopOf="@id/pinCodesBottomBarrier"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinCode3"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            style="@style/Button.Pin.Code"
+            app:layout_constraintStart_toEndOf="@+id/pinCode2"
+            app:layout_constraintTop_toBottomOf="@+id/actionCommandDisplay"
+            app:layout_constraintEnd_toStartOf="@+id/pinCode4"
+            app:layout_constraintBottom_toTopOf="@id/pinCodesBottomBarrier"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinCode4"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            style="@style/Button.Pin.Code"
+            app:layout_constraintStart_toEndOf="@+id/pinCode3"
+            app:layout_constraintTop_toBottomOf="@+id/actionCommandDisplay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pinCodesBottomBarrier"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey1"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_1_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinCodesBottomBarrier"
+            app:layout_constraintEnd_toStartOf="@+id/pinKey2"
+            app:layout_constraintBottom_toTopOf="@+id/pinKey5"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey2"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_2_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/pinKey1"
+            app:layout_constraintTop_toBottomOf="@+id/pinCodesBottomBarrier"
+            app:layout_constraintEnd_toStartOf="@+id/pinKey3"
+            app:layout_constraintBottom_toTopOf="@+id/pinKey6"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey3"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_3_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/pinKey2"
+            app:layout_constraintTop_toBottomOf="@+id/pinCodesBottomBarrier"
+            app:layout_constraintEnd_toStartOf="@+id/pinKey4"
+            app:layout_constraintBottom_toTopOf="@+id/pinKey7"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey4"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_4_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/pinKey3"
+            app:layout_constraintTop_toBottomOf="@+id/pinCodesBottomBarrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/pinKey8"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey5"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_5_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintTop_toBottomOf="@+id/pinKey1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pinKey6"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey6"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_6_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintTop_toBottomOf="@+id/pinKey2"
+            app:layout_constraintStart_toEndOf="@+id/pinKey5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pinKey7"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey7"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_7_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintTop_toBottomOf="@+id/pinKey3"
+            app:layout_constraintStart_toEndOf="@+id/pinKey6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pinKey8"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="visible"
+            android:id="@+id/pinKey8"
+            android:layout_width="@dimen/button_pin_dimen"
+            android:layout_height="@dimen/button_pin_dimen"
+            android:src="@drawable/ic_pin_key_8_black_24dp"
+            style="@style/Button.Pin"
+            app:layout_constraintTop_toBottomOf="@+id/pinKey4"
+            app:layout_constraintStart_toEndOf="@+id/pinKey7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/pinCodesTopGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"/>
+
+    <android.support.constraint.Barrier
+            android:id="@+id/pinCodesBottomBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="pinCode1, pinCode2, pinCode3, pinCode4"/>
+</com.myprojects.eduardoexposito.sphinx.ui.views.PinContainerView>

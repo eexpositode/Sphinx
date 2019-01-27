@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myprojects.eduardoexposito.sphinx.ui.views.SideEffectsRenderView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/viewGameMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            tools:visibility="visible"
+            layout="@layout/view_dialog_container"
+            android:id="@+id/dialogView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintStart_toStartOf="@+id/guideLineVPercent05"
+            app:layout_constraintTop_toTopOf="@id/guideLineHPercent05"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineVPercent95"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineHPercent95"/>
+
+    <android.support.v7.widget.AppCompatImageView
+            tools:visibility="invisible"
+            android:id="@+id/sphinxAvatarPic"
+            android:layout_width="@dimen/avatar_pic_size"
+            android:layout_height="@dimen/avatar_pic_size"
+            style="@style/Image.Avatar.Pic"
+            app:layout_constraintTop_toTopOf="@+id/guideLineHPercent2"
+            app:layout_constraintStart_toStartOf="@+id/guideLineVPercent05"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineVPercent95"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineHPercent8"
+            android:contentDescription="@string/pic_avatar_description"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:visibility="invisible"
+            tools:text="Victory"
+            android:id="@+id/actionResultDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text.Display"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toBottomOf="@+id/sphinxAvatarPic"
+            app:layout_constraintStart_toStartOf="@+id/guideLineVPercent05"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineVPercent95"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineHPercent95"/>
+
+    <include
+            tools:visibility="invisible"
+            layout="@layout/view_pin_container"
+            android:id="@+id/pinEnterView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/sphinxAvatarPic"
+            app:layout_constraintStart_toStartOf="@+id/guideLineVPercent05"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineVPercent95"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineHPercent95"
+            app:layout_constrainedWidth="true"/>
+
+    <include
+            tools:visibility="invisible"
+            layout="@layout/view_lock_code_container"
+            android:id="@+id/lockCodeView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/guideLineHPercent5"
+            app:layout_constraintStart_toStartOf="@+id/guideLineVPercent05"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineVPercent95"
+            app:layout_constraintBottom_toTopOf="@+id/guideLineHPercent95"/>
+
+    <!-- Horizontal Guidelines -->
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent05"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.05"
+            android:orientation="horizontal"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.1"
+            android:orientation="horizontal"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.2"
+            android:orientation="horizontal"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.8"
+            android:orientation="horizontal"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.9"
+            android:orientation="horizontal"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineHPercent95"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.95"
+            android:orientation="horizontal"
+            android:background="@color/guidelines_color"/>
+
+    <!-- Vertical Guidelines -->
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineVPercent05"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.05"
+            android:orientation="vertical"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineVPercent1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.1"
+            android:orientation="vertical"
+            android:background="@color/guidelines_color"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideLineVPercent95"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/guideline_dimen"
+            app:layout_constraintGuide_percent="0.95"
+            android:orientation="vertical"
+            android:background="@color/guidelines_color"/>
+
+</com.myprojects.eduardoexposito.sphinx.ui.views.SideEffectsRenderView>

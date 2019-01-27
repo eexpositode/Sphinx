@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myprojects.eduardoexposito.sphinx.ui.views.LockCodeContainer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:visibility="visible"
+            tools:text="Hola que tal"
+            android:id="@+id/lockCodeText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            style="@style/Text.Command"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lockCodeTextTopGuideline"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:text="1"
+            android:id="@+id/codeDigit1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_small"
+            style="@style/Text.Box"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lockCodeTextTopGuideline"
+            app:layout_constraintEnd_toStartOf="@+id/codeDigit2"
+            app:layout_constraintBottom_toTopOf="@id/lockCodeBottomBarrier"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:text="2"
+            android:id="@+id/codeDigit2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_small"
+            style="@style/Text.Box"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toEndOf="@id/codeDigit1"
+            app:layout_constraintTop_toBottomOf="@+id/lockCodeTextTopGuideline"
+            app:layout_constraintBottom_toTopOf="@id/lockCodeBottomBarrier"
+            app:layout_constraintEnd_toStartOf="@+id/codeDigit3"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:text="3"
+            android:id="@+id/codeDigit3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_small"
+            style="@style/Text.Box"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toEndOf="@+id/codeDigit2"
+            app:layout_constraintTop_toBottomOf="@+id/lockCodeTextTopGuideline"
+            app:layout_constraintBottom_toTopOf="@id/lockCodeBottomBarrier"
+            app:layout_constraintEnd_toStartOf="@+id/codeDigit4"/>
+
+    <android.support.v7.widget.AppCompatTextView
+            tools:text="4"
+            android:id="@+id/codeDigit4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_small"
+            style="@style/Text.Box"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toEndOf="@+id/codeDigit3"
+            app:layout_constraintTop_toBottomOf="@+id/lockCodeTextTopGuideline"
+            app:layout_constraintBottom_toTopOf="@id/lockCodeBottomBarrier"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.v7.widget.AppCompatButton
+            tools:visibility="visible"
+            android:id="@+id/lockCodeContinueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/lock_code_continue_text"
+            style="@style/Button.Dialog.Continue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lockCodeBottomBarrier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/lockCodeTextTopGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"/>
+
+    <android.support.constraint.Barrier
+            android:id="@+id/lockCodeBottomBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="codeDigit1, codeDigit2, codeDigit3, codeDigit4"/>
+</com.myprojects.eduardoexposito.sphinx.ui.views.LockCodeContainer>

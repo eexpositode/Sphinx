@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.PlaygroundActivity">
+
+    <TextView
+            android:id="@+id/locationLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalTopGuideline"/>
+
+    <TextView
+            android:id="@+id/locationLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_latitude_label"
+            app:layout_constraintEnd_toEndOf="@+id/verticalMiddleGuideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationLabelTextView"/>
+
+    <TextView
+            android:id="@+id/locationLatitudeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/verticalMiddleGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/locationLabelTextView"
+            tools:text="Any latitude"/>
+
+    <TextView
+            android:id="@+id/locationLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_longitude_label"
+            app:layout_constraintEnd_toEndOf="@+id/verticalMiddleGuideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationLatitude"/>
+
+    <TextView
+            android:id="@+id/locationLongitudeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/verticalMiddleGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/locationLatitude"
+            tools:text="Any longitude"/>
+
+    <TextView
+            android:id="@+id/locationDistanceToTenerife"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_huge"
+            app:layout_constraintStart_toStartOf="@id/verticalStartBarrier"
+            app:layout_constraintTop_toBottomOf="@+id/locationLongitudeValue"
+            tools:text="Distance to Tenerife: A lifetime"/>
+
+    <ImageView
+            android:id="@+id/locationTenerifeReached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="@+id/locationDistanceToTenerife"
+            app:layout_constraintBottom_toBottomOf="@+id/locationDistanceToTenerife"
+            app:layout_constraintStart_toEndOf="@+id/locationDistanceToTenerife"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+    <TextView
+            android:id="@+id/locationDistanceToBerlin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="@id/verticalStartBarrier"
+            app:layout_constraintTop_toBottomOf="@+id/locationDistanceToTenerife"
+            tools:text="Distance to Berlin: A lifetime"/>
+
+    <ImageView
+            android:id="@+id/locationBerlinReached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="@+id/locationDistanceToBerlin"
+            app:layout_constraintBottom_toBottomOf="@+id/locationDistanceToBerlin"
+            app:layout_constraintStart_toEndOf="@+id/locationDistanceToBerlin"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+    <TextView
+            android:id="@+id/locationDistanceToBerlinGendarmenmarkt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="@id/verticalStartBarrier"
+            app:layout_constraintTop_toBottomOf="@+id/locationDistanceToBerlin"
+            tools:text="Distance to Mark1: A lifetime"/>
+
+    <ImageView
+            android:id="@+id/locationBerlinGendarmenmarktReached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="@+id/locationDistanceToBerlinGendarmenmarkt"
+            app:layout_constraintBottom_toBottomOf="@+id/locationDistanceToBerlinGendarmenmarkt"
+            app:layout_constraintStart_toEndOf="@+id/locationDistanceToBerlinGendarmenmarkt"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+    <TextView
+            android:id="@+id/locationDistanceToBerlinCharlottenburg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="@id/verticalStartBarrier"
+            app:layout_constraintTop_toBottomOf="@+id/locationDistanceToBerlinGendarmenmarkt"
+            tools:text="Distance to Markt2: A lifetime"/>
+
+    <ImageView
+            android:id="@+id/locationBerlinCharlottenburgReached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="@+id/locationDistanceToBerlinCharlottenburg"
+            app:layout_constraintBottom_toBottomOf="@+id/locationDistanceToBerlinCharlottenburg"
+            app:layout_constraintStart_toEndOf="@+id/locationDistanceToBerlinCharlottenburg"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+    <TextView
+            android:id="@+id/locationDistanceToBerlinAlexanderplatz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintStart_toStartOf="@id/verticalStartBarrier"
+            app:layout_constraintTop_toBottomOf="@+id/locationDistanceToBerlinCharlottenburg"
+            tools:text="Distance to Tenerife: A lifetime"/>
+
+    <ImageView
+            android:id="@+id/locationBerlinAlexanderplatzReached"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_marginStart="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="@+id/locationDistanceToBerlinAlexanderplatz"
+            app:layout_constraintBottom_toBottomOf="@+id/locationDistanceToBerlinAlexanderplatz"
+            app:layout_constraintStart_toEndOf="@+id/locationDistanceToBerlinAlexanderplatz"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+    <include
+            layout="@layout/view_test_state_renderer"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_big"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/locationDistanceToBerlinAlexanderplatz"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/horizontalTopGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/margin_medium"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/verticalMiddleGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+    <android.support.constraint.Barrier
+            android:id="@+id/verticalStartBarrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="locationLatitude, locationLongitude"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Initial state -->
+    <string name="app_start_get_location_state">AppStartGetLocationState</string>
+    <!-- Initial location fail -->
+    <string name="app_start_get_location_failure_state">AppStartGetLocationFailureState</string>
+    <string-array name="app_start_get_location_failure_state_dialog_txt">
+        <item>No sé quién eres extraño ni qué asuntos te traen ante mí, pero me temo que estás en el lugar equivocado en el momento menos oportuno…</item>
+        <item>
+            ¿Osas molestarme mortal?
+            \nMejor vete ahora, antes de que sea demasiado tarde…
+        </item>
+        <item>
+            Tu búsqueda puede haberte traído al umbral de tu destino.
+            \nSigue buscando hasta que sus puertas se abran ante tí.
+        </item>
+    </string-array>
+    <string name="app_start_get_location_failure_state_continue_button_txt">Reintentar</string>
+    <!-- Retry get location -->
+    <string name="retry_get_location_state">RetryGetLocationState</string>
+    <!-- Introduction to the game -->
+    <string name="app_introduction_dialog_txt">
+        Saludos, aventurero.
+        \n\n¿Serás tú el que había de llegar?\n\
+        ¿Aquél que por fin desvelará el significado último de mis enigmas y descubra el camino hasta la sabiduría que yace detrás…
+        \n\n¡Ah! Y a infinitos tesoros, por supuesto…
+    </string>
+    <string name="app_introduction_continue_button_txt">¡Jugemos!</string>
+    <!-- Enter pin code state -->
+    <string name="enter_start_code_state">EnterStartCodeState</string>
+    <string name="enter_start_code_state_action_txt">
+        No tan rápido.
+        \nLa clave te abrirá el camino…
+    </string>
+    <!-- Enter pin code failed state -->
+    <string name="enter_code_failure_state">EnterCodeFailureState</string>
+    <string name="enter_code_failure_state_action_txt">¡Respuesta incorrecta, mortal!</string>
+    <!-- Retry enter pin code state -->
+    <string name="retry_enter_code_state">RetryEnterCodeState</string>
+    <string-array name="retry_enter_code_state_action_txt">
+        <item>Mi paciencia tiene un límite. ¡Prueba de nuevo!</item>
+        <item>Jajajaja pobre humano. ¡Has fallado!</item>
+        <item>Me pregunto a qué sabrá tu cabeza…</item>
+    </string-array>
+    <!-- Presentation state -->
+    <string name="presentation_state">PresentationState</string>
+    <string name="presentation_state_dialog_txt">
+        ¡Bien hecho aventurera!
+        \n\nHas abierto las puertas a la mayor de las aventuras.
+        \nRetos inimaginables y peligros mortales obstaculizarán tu camino y te harán fracasar con toda seguridad.
+        \nPero tu valor merece mi respeto y te ayudaré en tu busqueda. Seré tu guía en el tenebroso sendero que se abre ante ti…
+        \n\n¿Comenzamos?
+    </string>
+    <string name="presentation_state_accept_button_txt">¡Sí, a por todas!</string>
+    <string name="presentation_state_decline_button_txt">Mejor no, gracias…</string>
+    <!-- Challenge declined-->
+    <string name="presentation_declined_state">PresentationDeclinedState</string>
+    <string name="presentation_declined_state_dialog_txt">
+        Jajajajaja
+        \n\nHuelo a cobardía, humana y detesto ese tufo.
+        \nYa has llegado hasta aquí y solo hay un camino:
+        \n\n¡Adelante!
+    </string>
+    <string name="presentation_declined_state_accept_button_txt">De acuerdo</string>
+    <!-- Riddle to Berlin state -->
+    <string name="riddle_to_berlin_state">RiddleToBerlinState</string>
+    <string name="riddle_to_berlin_state_dialog_txt">
+        Ésta es tu primera prueba. ¡Suerte!:
+        \n\nHalla el lugar mas allá del océano,
+        \nCruzando los reinos de los hombres tras los pilares de Hércules,
+        \nY aún más al norte, hasta la tierra de las nieves perpetuas alcanzar,
+        \nDonde moran los hombres a ambos lados del muro.
+        \nTu refugio será a su vez, el principio de tu viaje.
+    </string>
+    <string name="riddle_to_berlin_state_solved_button_txt">¡He llegado!</string>
+    <!-- Riddle to Berlin Location Failure state -->
+    <string name="riddle_to_berlin_location_failure_state">RiddleToBerlinLocationFailureState</string>
+    <string name="riddle_to_berlin_location_success_action_txt">¡Enhorabuena buscadora!</string>
+    <string-array name="riddle_to_berlin_location_failure_state_dialog_txt">
+        <item>Aún te queda mucho camino por recorrer, aventurera…</item>
+        <item>No me molestes hasta que hayas llegado a tu destino.</item>
+        <item>
+            No puedes engañarme humana.
+            \n\nA mí no…
+        </item>
+    </string-array>
+    <string name="riddle_to_berlin_location_failure_retry_button_txt">Repítemelo…</string>
+    <!-- Riddle to Gendarmentmarkt state -->
+    <string name="riddle_to_gendarmentmarkt_state">RiddleToGendarmenMarktState</string>
+    <string name="riddle_to_gendarmentmarkt_dialog_txt">
+        Esta es tu siguiente prueba:
+        \n\nOrgullosas se alzan en perpetua contienda,
+        \nDe distintos credos pero idéntica piedra,
+        \nIdéntica faz e idéntico tañir de sus campanas,
+        \nUn mercado las separa mientras guardan su plaza,
+        \nTal es el siguiente destino que te aguarda.
+    </string>
+    <string name="riddle_to_gendarmentmarkt_button_txt">¡Lo he descifrado!</string>
+    <!-- Riddle to Gendarmentmarkt Failure state -->
+    <string name="riddle_to_gendarmentmarkt_location_failure_state">RiddleToGendarmenMarktFailureState</string>
+    <string-array name="riddle_to_gendarmentmarkt_location_failure_state_dialog_txt">
+        <item>
+            Ni de lejos.
+            \nPrueba de nuevo.
+        </item>
+        <item>Tengo la sensación de que no te esfuerzas lo suficiente…</item>
+        <item>Si me sigues haciendo perder el tiempo, podrías acabar en mi estómago…</item>
+    </string-array>
+    <string name="riddle_to_gendarmentmarkt_location_success_state_action_txt">
+        Me impresionas aventurera.
+        \n¡Bien hecho!
+    </string>
+    <string name="riddle_to_gendarmentmarkt_location_failure_state_button_txt">Repítemelo…</string>
+    <!-- Show Code from Gendarmenmarkt state -->
+    <string name="show_lock_from_gendarmenmarkt_state">ShowLockCodeFromGendarmenmarktState</string>
+    <string name="show_lock_from_gendarmenmarkt_action_txt">Has desbloqueado la primer clave, aventurera…</string>
+    <!-- Check location before CharlottenBurg Markt Riddle -->
+    <string name="riddle_before_charlottenburg_riddle_state">RiddleBeforeCharlottenBurgState</string>
+    <string name="riddle_before_charlottenburg_riddle_state_dialog_txt">
+        Descansa ahora y ve a por tu premio. Te lo has ganado.
+        \n\nCuando estés preparada y hayas obtenido lo que te pertenece, ¡búscame!
+        \n\nEsto está lejos de acabar…
+    </string>
+    <string name="riddle_before_charlottenburg_riddle_state_solved_button_txt">Quiero continuar</string>
+    <!-- Check location before Charlottenburg Riddle Failure state -->
+    <string name="check_location_before_charlottenburg_riddle_failure_state">RiddleBeforeCharlottenBurgLocationFailureState</string>
+    <string name="check_location_before_charlottenburg_riddle_success_action_txt">
+        Bienvenida aventurera,
+        \nte estaba esperando
+    </string>
+    <string-array name="check_location_before_charlottenburg_riddle_failure_state_dialog_txt">
+        <item>No seas impaciente amiga mía y recoge tu premio.</item>
+        <item>Cuando hayas recogido tu premio házmelo saber.</item>
+        <item>No tientes mis apetitos humana…</item>
+    </string-array>
+    <string name="check_before_charlottenburg_riddle_failure_retry_button_txt">De acuerdo. ¿Ahora?</string>
+    <!-- Riddle to CharlottenBurg state -->
+    <string name="riddle_to_charlottenburgmarkt_state">RiddleToCharlottenBurgMarktState</string>
+    <string name="riddle_to_charlottenburgmarkt_dialog_txt">
+        Bien aventurera, he aquí tu siguiente reto:
+        \n\nUna reina apartada de un rey ingrato,
+        \nMarchita en vida Charlotte espera, en una jaula de mármol y oro,
+        \nAún espera la caricia del amado, la ternura del esposo.
+        \nMas es en vano, pues ha sido olvidada,
+        \nMarchita en vida Charlotte espera, en una jaula de mármol y oro.
+    </string>
+    <string name="riddle_to_charlottenburgmarkt_button_txt">Tengo la solución</string>
+    <!-- Riddle to CharlottenBurg Failure state -->
+    <string name="riddle_to_charlottenburgmarkt_location_failure_state">RiddleToCharlottenBurgMarktFailureState</string>
+    <string-array name="riddle_to_charlottenburgmarkt_location_failure_state_dialog_txt">
+        <item>Aún no, pero estás cerca</item>
+        <item>No pretenderás que haga todo el trabajo por tí, ¿verdad?</item>
+        <item>Así no vamos a ninguna parte. Mejor acabo ya con tu sufrimiento.</item>
+    </string-array>
+    <string name="riddle_to_charlottenburgmarkt_location_success_state_action_txt">
+        ¡Extraordinario!
+        \nTe has superado
+    </string>
+    <string name="riddle_to_charlottenburgmarkt_location_failure_state_button_txt">Prueba otra vez</string>
+    <string name="show_lock_from_charlottenburg_action_txt">Has desbloqueado la segunda clave, aventurera…</string>
+    <!-- Check location before Alexanderplatz Markt Riddle -->
+    <string name="check_location_before_alexanderplatz_riddle_state">RiddleBeforeAlexanderplatzBurgState</string>
+    <string name="check_location_before_alexanderplatz_riddle_state_dialog_txt">
+        La jornada ha sido dura y lo has hecho muy bien. Es hora de descansar.
+        \nVuelve a casa y avísame entonces.
+    </string>
+    <string name="check_location_before_alexanderplatz_riddle_state_solved_button_txt">Ya estoy aquí</string>
+    <!-- Check location before Alexanderplatz Riddle Failure state -->
+    <string name="check_location_before_alexanderplatz_riddle_failure_state">CheckLocationBeforeAlexanderPlatzRiddleFailureState</string>
+    <string name="check_location_before_alexanderplatz_riddle_success_action_txt">¡Muy bien!</string>
+    <string-array name="check_location_before_alexanderplatz_riddle_failure_state_dialog_txt">
+        <item>Creía que ya habíamos superado esto…</item>
+        <item>
+            Estás para comerte,
+            \n¿lo sabías?
+        </item>
+        <item>Aún no, aún no…</item>
+    </string-array>
+    <string name="check_before_alexanderplatz_riddle_failure_retry_button_txt">De acuerdo, y ¿ahora?</string>
+    <!-- Riddle to Alexanderplatz state -->
+    <string name="riddle_to_alexanderplatzmarkt_state">RiddleToAlexanderplatzMarktState</string>
+    <string name="riddle_to_alexanderplatzmarkt_dialog_txt">
+        Bien, bien aventurera. Veamos como resuelves tu último enigma:
+        \n\nEl mundo tiene aquí sus horas,
+        \nEl mundo tiene aquí su eje,
+        \nEl mundo aquí se postró a tus pies,
+        \nTendido a tu asombrado escrutinio,
+        \nMientras yo solo tenía ojos para tí.
+    </string>
+    <string name="riddle_to_alexanderplatzmarkt_button_txt">Éste es muy fácil</string>
+    <!-- Riddle to Alexanderplatz Failure state -->
+    <string name="riddle_to_alexanderplatzmarkt_location_failure_state">RiddleToAlexanderplatzMarktFailureState</string>
+    <string-array name="riddle_to_alexanderplatzmarkt_location_failure_state_dialog_txt">
+        <item>
+            Presta atención o extraviarás tu camino.
+            \nNo querrás conocer los horrores de sus lindes.
+        </item>
+        <item>
+            Concéntrate aventurera.
+            \nÉste es tu último acertijo.
+        </item>
+        <item>¿Te estás volviendo torpe?</item>
+    </string-array>
+    <string name="riddle_to_alexanderplatzmarkt_location_success_state_action_txt">¡Lo has logrado!</string>
+    <string name="riddle_to_alexanderplatzmarkt_location_failure_state_button_txt">Dímelo de nuevo.</string>
+    <string name="show_lock_from_alexanderplatz_action_txt">Has desbloqueado la tercera y última clave, aventurera…</string>
+    <!-- Check location before Finale Riddle -->
+    <string name="check_location_before_finale_state">RiddleBeforeFinaleState</string>
+    <string name="check_location_before_finale_state_dialog_txt">
+        El final de nuestra aventura se aproxima. Vuelve a casa y descansa. Tu premio te espera.
+    </string>
+    <string name="check_location_before_finale_state_solved_button_txt">¿Y ahora qué?</string>
+    <!-- Check location before Finale Failure state -->
+    <string name="check_location_before_finale_failure_state">CheckLocationBeforeFinaleFailureState</string>
+    <string name="check_location_before_finale_success_action_txt">¡Bien hecho!</string>
+    <string-array name="check_location_before_finale_failure_state_dialog_txt">
+        <item>Un último esfuerzo. No pierdas la paciencia.</item>
+        <item>Tu premio espera. Búscame cuando hayas llegado.</item>
+        <item>Cariño no hagas que te de un mordisco…</item>
+    </string-array>
+    <string name="check_before_finale_failure_retry_button_txt">¡Ya estoy!</string>
+    <!-- Finale state -->
+    <string name="finale_state">FinaleState</string>
+    <string name="finale_state_dialog_txt">
+        Ha llegado la hora de despedirnos aventurera. Hasta aquí llega nuestro camino juntos.
+        \n\nNo hubiera podido desear una compañera mejor en esta odisea y espero que tú también lo hayas pasado bien.
+        \nRecuerda, no hay mayor aventura que la vida y siempre que me busques, ahí estaré para compartirla contigo.
+        \n\nEsfinge.
+    </string>
+    <string name="finale_state_button_txt">End</string>
+    <!-- Grand Finale state -->
+    <string name="grand_finale_state">GrandFinaleState</string>
+    <string name="grand_finale_state_dialog_txt">
+        ¡¡Feliz cumpleaños amor!!!
+        \n\nEspero que todo haya salido bien, aunque las probabilidades están en mi contra Jajaja.
+        \nEspero que lo hayas disfrutado y que hayas pasado unos días geniales conmigo en Berlín. Esto lo he hecho con todo mi amor
+        y espero que sea solamente la primera de nuestras muchas aventuras.
+        \n\nTE QUIEROOOO
+        \n\nFELIZ NAVIDAD 2018
+    </string>
+</resources>

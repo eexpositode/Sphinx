@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing-->
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_big">12dp</dimen>
+    <dimen name="margin_huge">24dp</dimen>
+    <dimen name="margin_start_to_avatar_small">32dp</dimen>
+    <dimen name="margin_top_to_avatar_small">32dp</dimen>
+    <dimen name="margin_bottom_to_action_buttons">32dp</dimen>
+    <dimen name="padding_from_dialog_text_bottom_to_button_top">32dp</dimen>
+
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_big">12dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_huge">48dp</dimen>
+    <dimen name="padding_enormous">60dp</dimen>
+
+    <dimen name="avatar_icon_size">100dp</dimen>
+    <dimen name="avatar_pic_size">300dp</dimen>
+    <dimen name="avatar_top_pic_size">200dp</dimen>
+    <dimen name="dialog_min_height">300dp</dimen>
+
+    <!-- Text-->
+    <dimen name="text_tiny">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_large">32sp</dimen>
+    <dimen name="text_huge">48sp</dimen>
+
+    <!-- Components-->
+    <dimen name="dialog_border_dimen">2dp</dimen>
+    <dimen name="guideline_dimen">3dp</dimen>
+    <dimen name="bg_border_radius_50dp">50dp</dimen>
+    <dimen name="bg_border_radius_10dp">10dp</dimen>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="button_pin_dimen">62dp</dimen>
+</resources>
