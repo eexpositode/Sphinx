@@ -3,7 +3,6 @@ package com.myprojects.eduardoexposito.sphinx.ui.activities
 import android.location.Location
 import android.os.Bundle
 import com.myprojects.eduardoexposito.sphinx.R
-import com.myprojects.eduardoexposito.sphinx.modules.SideEffectsDelegateInterface
 import kotlinx.android.synthetic.main.activity_main_container.*
 
 class MainContainerActivity : BaseLocationActivity() {
